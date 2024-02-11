@@ -58,7 +58,7 @@
 }
 
 #sideNav{
-    width: 120px;
+    width: 130px;
     height: 100vh;
     position: fixed;
     right: -250px;
@@ -248,7 +248,143 @@ hr{
         margin: 5px auto;
     }
     .single-service:hover .service-desc{
-        bottom: 25%;
+        bottom: 25% !important;
     }
 }  
  
+/* testimonial */
+
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #1b5a9214;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+user-info .fa{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info small{
+    color: #0b1925;
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+@media screen and (max-width: 770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}  
+
+/* Footer */
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-rowh1{
+    margin: 10px 0;
+}
+footer-row p{
+    line-height: 35px;
+}
+
+.contact-form form{
+    position: relative;
+}
+.contact-form h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #0b1925;
+}
+.contact-form form input,form textarea{
+
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #555557;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #efefef;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.contact-form form .send:hover {
+    background: #081b29;
+    color: #efefef;
+   
+}
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #efefef;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.top{
+    position: fixed;
+}
+
